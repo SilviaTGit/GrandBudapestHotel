@@ -1,0 +1,63 @@
+@font-face{
+font-family:'Archer-Bold-Pro';
+src: local('Archer-Bold-Pro'), url('Archer-Bold-Pro.otf') format('truetype');
+}
+
+body{
+font-family:'Archer-Bold-Pro' helvetica, times new roman, sans-serif;
+background:#F5DEB3;
+background-color: #fff;
+background-image: url(hotel1.jpg);
+background-repeat: no-repeat;
+background-position: top left;
+background-size:cover;
+background-attachment: fixed;
+}
+
+header{
+color:#FFE4C4;
+text-align:center;
+}
+
+a:link, a:visited { color: #FFF0F5; text-decoration: none; font-weight: bold;} 
+a:active, a:hover { color: #621C03; text-decoration: none; font-weight: bold;}
+
+nav{
+	box-shadow: 7px 7px 30px 2px #621C03;
+-webkit-box-shadow: 7px 7px 30px 2px #621C03;
+-moz-box-shadow: 7p 7px 30px 2px #621C03;
+border-radius: 20px;
+-moz-border-radius: 20px;
+	background-color: rgba(231,84,128,0.7);
+	margin-left:0;
+	height:160px;
+	width: 150px;
+	float: left;
+	text-align:center;
+position:fixed;
+	}
+
+section{
+box-shadow: 7px 7px 30px 2px #621C03;
+-webkit-box-shadow: 7px 7px 30px 2px #621C03;
+-moz-box-shadow: 7p 7px 30px 2px #621C03;
+border-radius: 20px;
+-moz-border-radius: 20px;
+color:#621C03;
+background-color: rgba(250,218,221,0.8);
+	padding:20px;
+	margin-right:250px;
+	margin-left:250px;
+	text-align: left;}
+	
+footer{
+	text-align:center;
+	display:block;
+	clear:both !important; /**interrompe il floating**/
+	background-color:#E52B50;
+    bottom:0;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:100;
+	}

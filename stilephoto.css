@@ -1,0 +1,304 @@
+/* page layout */
+*{
+
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+font-family:'Archer-Bold-Pro';
+src: local('Archer-Bold-Pro'), url('Archer-Bold-Pro.otf') format('truetype');
+}
+
+body {
+color:#621C03;
+font-family:'Archer-Bold-Pro', helvetica, times new roman, sans-serif;
+background:#F5DEB3;
+background-color: #fff;
+background-image: url(hotel1.jpg);
+background-repeat: no-repeat;
+background-position: top left;
+background-size:cover;
+background-attachment: fixed;
+}
+
+nav{
+	box-shadow: 7px 7px 10px 2px #003300;
+-webkit-box-shadow: 7px 7px 10px 2px #003300;
+-moz-box-shadow: 7p 7px 10px 2px #003300;
+border-radius: 20px;
+-moz-border-radius: 20px;
+	background-color: rgba(231,84,128,0.7);
+	margin-left:0;
+	height:160px;
+	width: 150px;
+	float: left;
+	text-align:center;
+position:fixed;
+	}
+
+footer {
+
+    background-color:#E52B50;
+    bottom:0;
+    box-shadow: 0 -1px 2px #111111;
+    -moz-box-shadow: 0 -1px 2px #111111;
+    -webkit-box-shadow: 0 -1px 2px #111111;
+    display:block;
+    height:70px;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:100;
+}
+
+footer h2{
+    font-size:22px;
+    left:50%;
+    margin-left:-400px;
+    padding:22px 0;
+    position:absolute;
+    width:540px;
+}
+
+footer a.stuts,a.stuts:visited{
+
+    border:none;
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+    left:50%;
+    line-height:31px;
+    margin:23px 0 0 110px;
+    position:absolute;
+    top:0;
+}
+footer .stuts span {
+
+    font-size:22px;
+    font-weight:bold;
+
+    margin-left:5px;
+
+}
+
+.container {
+
+         background-color: rgba(229,43,80,0.2);
+        color:#000;
+    
+    margin:20px auto;
+    padding:20px;
+
+    position:relative;
+
+    width:700px;
+
+ 
+
+    border-radius:5px;
+
+    -moz-border-radius:5px;
+
+    -webkit-border-radius:5px;
+
+ 
+
+    box-shadow:1px 1px 5px #000;
+
+    -moz-box-shadow:1px 1px 5px #000;
+
+    -webkit-box-shadow:1px 1px 5px #000;
+
+}
+
+ 
+
+/* css3 photo gallery styles */
+
+.gallery {
+
+    width:610px;
+
+    margin:0 auto;
+    
+}
+
+.gallery a {
+
+    display:inline-block;
+
+    height:150px;
+    position:relative;
+
+    width:200px;
+
+}
+
+.gallery a img {
+
+    border:5px solid #E52B50;
+
+    cursor:pointer;
+    display:block;
+
+    height:100%;
+
+    left:0px;
+
+    position:absolute;
+
+    top:0px;
+
+    width:100%;
+
+    z-index:1;
+
+    -moz-user-select: none;
+
+    -khtml-user-select: none;
+
+    user-select: none;
+ 
+    -moz-box-sizing:border-box;
+
+    -webkit-box-sizing:border-box;
+
+    box-sizing:border-box;
+
+ 
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -webkit-transition-duration:0.5s;
+
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -moz-transition-duration:0.5s;
+
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -o-transition-duration:0.5s;
+
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    transition-duration:0.5s;
+
+     border-radius:5px;
+
+    -moz-border-radius:5px;
+
+    -webkit-border-radius:5px;
+
+}
+
+.gallery a:focus img {
+
+    border:0px solid #E52B50;
+
+    cursor:default;
+
+    height:250%;
+
+    position:absolute;
+
+    width:250%;
+
+    z-index:25;
+
+    border-radius:10px;
+
+    -moz-border-radius:10px;
+
+    -webkit-border-radius:10px;
+
+    box-shadow:1px 1px 5px #000;
+
+    -moz-box-shadow:1px 1px 5px #000;
+    -webkit-box-shadow:1px 1px 5px #000;
+
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -webkit-transition-duration:0.5s;
+
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -moz-transition-duration:0.5s;
+
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    -o-transition-duration:0.5s;
+
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+
+    transition-duration:0.5s;
+
+}
+
+ 
+/* custom focus rules */
+
+.gallery a:focus:nth-child(3n+1) img {
+
+left:150px;
+
+}
+
+.gallery a:focus:nth-child(3n+2) img {
+
+    left:-50px;
+
+}
+
+.gallery a:focus:nth-child(3n+3) img {
+
+    left:-250px;
+}
+
+.gallery a:focus:nth-child(-n+3) img {
+
+    top:140px;
+
+}
+
+.gallery a:focus:nth-child(n+7) img {
+
+    top:-150px;
+}
+
+.gallery a:focus:nth-child(n+10) img {
+
+    top:-295px;
+
+}
+
+ 
+
+/* extra close layer */
+
+.gallery .close {
+
+    background:transparent;
+    cursor:pointer;
+    display:none;
+    height:352px;
+    left:170px;
+    position:absolute;
+    top:160px;
+    width:500px;
+    z-index:30;
+}
+
+.gallery a:focus ~ .close {
+
+    display:block;
+
+}
+
+a:link, a:visited { color: #FFF0F5; text-decoration: none; font-weight: bold;} 
+a:active, a:hover { color: #621C03; text-decoration: none; font-weight: bold;}
+
+a:hover img{
+-webkit-transform:scale(1.5);
+-moz-transform:scale(1.5);
+transform:scale(1.5);
+}
